@@ -19,7 +19,7 @@ struct CalculatorBrain {
         case equals
     }
     
-    private var operations: Dictionary<String, Operation> = [
+    private var operations: [String : Operation] = [
         "∏" : Operation.constant(Double.pi),
         "e" : Operation.constant(M_E),
         "√" : Operation.unaryOperation(sqrt),
